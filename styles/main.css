@@ -34,6 +34,8 @@
 
 .navbar {
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 /* menu items style */
@@ -43,7 +45,76 @@
   margin-right: 50px;
 }
 
+.menu-items:last-child {
+  margin-right: 0;
+}
+
 .menu-link {
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.125rem;
+}
+
+/* Banner styel */
+
+.banner {
+  text-align: center;
+}
+
+.banner-text-box {
+  max-width: 53.875rem;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+}
+
+.banner-heading {
+  color: rgb(19, 19, 19);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.banner-desc {
+  color: rgb(114, 114, 114);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  padding: 1.25rem 1.5625rem;
+  border: none;
+  margin-bottom: 3.125rem;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+}
+
+.banner-img {
+  width: 100%;
+  margin-bottom: 3.125rem;
+}
+
+/* responsive media query */
+
+/* Header responsive */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .navbar {
+    margin-bottom: 3.125rem;
+  }
+
+  .banner-heading {
+    font-size: 3.125rem;
+    line-height: 55px;
+  }
 }
